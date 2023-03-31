@@ -1,0 +1,130 @@
+.wrapper {
+  padding: 50px 0;
+  padding-bottom: 0;
+}
+
+.titlesAndButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 25px;
+  padding-left: 12px;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #d0dce7;
+}
+
+.mySlide {
+  position: relative;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.cardContainer {
+  padding: 0 8px;
+}
+.sliderButton {
+  width: 70px;
+  height: 41px;
+  background: #404656;
+  border-radius: 69px;
+  color: #d0dce7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.sliderButton::after {
+  display: none;
+}
+.sliderButton::before {
+  display: none;
+}
+.sliderButtonNext {
+  right: -75px;
+}
+.sliderButtonPrev {
+  left: -75px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-top: 80px;
+}
+.button {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(208, 220, 231, 0.8);
+  border: none;
+  outline: none;
+  background: rgba(208, 220, 231, 0.1);
+  border-radius: 999px;
+  padding: 18px 28px;
+  cursor: pointer;
+}
+.activeButton {
+  background: #22c55c;
+  color: #232b32;
+}
+@media only screen and (max-width: 1350px) {
+  .sliderButtonNext {
+    right: -70px;
+  }
+  .sliderButtonPrev {
+    left: -70px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .mySlide {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .titlesAndButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sliderButtonNext {
+    display: none;
+  }
+  .sliderButtonPrev {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mySlide {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .sliderButton {
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

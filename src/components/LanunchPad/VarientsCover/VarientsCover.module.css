@@ -1,0 +1,91 @@
+.wrapper {
+  padding: 50px 0;
+}
+
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #d0dce7;
+  padding-bottom: 25px;
+  padding-left: 12px;
+}
+
+.mySlide {
+  position: relative;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.cardContainer {
+  padding: 0 8px;
+}
+.button {
+  width: 70px;
+  height: 41px;
+  background: #404656;
+  border-radius: 69px;
+  color: #d0dce7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.button::after {
+  display: none;
+}
+.button::before {
+  display: none;
+}
+.swiperButtonNext {
+  right: -75px;
+}
+.swiperButtonPrev {
+  left: -75px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .swiperButtonNext {
+    right: -70px;
+  }
+  .swiperButtonPrev {
+    left: -70px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .mySlide {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .swiperButtonNext {
+    display: none;
+  }
+  .swiperButtonPrev {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mySlide {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .button {
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

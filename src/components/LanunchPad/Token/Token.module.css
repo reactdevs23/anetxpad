@@ -1,0 +1,120 @@
+.wrapper {
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tokenContainer {
+  background: #20212c;
+  border-radius: 30px;
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  position: relative;
+}
+
+.textContainer {
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.image {
+  position: absolute;
+  top: -30px;
+  height: 430px;
+
+  bottom: 0;
+  right: -25px;
+  width: 100%;
+  display: block;
+  max-width: 499px;
+  z-index: 2;
+}
+
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 150%;
+  width: 100%;
+  text-transform: capitalize;
+  color: #d0dce7;
+  opacity: 0.8;
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 185.5%;
+  text-transform: capitalize;
+  color: rgb(208, 220, 231, 0.5);
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+}
+.button {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(208, 220, 231, 0.8);
+  border: none;
+  outline: none;
+  background: rgba(208, 220, 231, 0.1);
+  border-radius: 999px;
+  padding: 18px 28px;
+  cursor: pointer;
+}
+.activeButton {
+  background: #22c55c;
+  color: #232b32;
+}
+
+@media only screen and (max-width: 1199px) {
+  .title {
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tokenContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .image {
+    position: static;
+    height: auto;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .tokenContainer {
+    padding: 15px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

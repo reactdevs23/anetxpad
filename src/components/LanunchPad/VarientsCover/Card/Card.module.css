@@ -1,0 +1,145 @@
+.card {
+  background: #2e3443;
+  border-radius: 24px;
+  width: 100%;
+}
+.imageTitleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  padding-bottom: 0;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #404656;
+  border-radius: 24px;
+  padding: 15px;
+}
+.image,
+.subImage {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+}
+.subImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.titleAndStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reliableAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reliable {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: capitalize;
+  color: #d0dce7;
+}
+.verified {
+  color: #1d9bf0;
+  font-size: 16px;
+  line-height: 125%;
+  margin-top: 3px;
+}
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 130px;
+}
+
+.rare {
+  background: #22c55c;
+}
+.common {
+  background: #22c55c;
+}
+.uncommon {
+  background: #feda03;
+}
+.statusText {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 133%;
+  color: #232b32;
+}
+
+.infoContainer {
+  padding: 20px 0;
+  padding-bottom: 20px;
+}
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(208, 220, 231, 0.1);
+  padding: 5px 18px;
+  min-height: 43px;
+}
+.infoWrapper:first-child {
+  border-top: 1px solid rgba(208, 220, 231, 0.1);
+}
+
+.info {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgb(208, 220, 231, 0.8);
+  opacity: 0.5;
+}
+@media only screen and (max-width: 520px) {
+  .imageTitleInfo {
+    padding: 12px;
+  }
+  .priceWrapper {
+    padding: 8px 12px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .reliableAndTitle {
+    gap: 5px;
+  }
+  .reliable {
+    width: 35px;
+    height: 35px;
+  }
+  .statusText {
+    font-size: 13px;
+  }
+  .info {
+    font-size: 13px;
+  }
+  .price {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,28 @@
+.progressBar {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  height: 22px;
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(32, 33, 44, 0.9);
+  border-radius: 132px;
+  transition: background-color 0.5s ease-out;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(212.19deg, #56d984 -20.22%, #196d37 121.54%);
+  border-radius: 132px;
+  height: 12px;
+  transition: width 0.5s ease-out;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 520px) {
+  .progressBar {
+    height: 18px;
+  }
+  .progress {
+    height: 10px;
+  }
+}
